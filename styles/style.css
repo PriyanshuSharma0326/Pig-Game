@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Darumadrop One', cursive;
+    background-color: #394867;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-container {
+    width: 40rem;
+    display: flex;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.game-left-container, .game-right-container {
+    width: 50%;
+    background-color: #9BA4B5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    padding: 5rem 3rem;
+}
+
+.player-active {
+    background-color: #F1F6F9;
+}
+
+.player-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.player-title {
+    font-size: 3rem;
+    color: #212A3E;
+}
+
+.player-score {
+    font-size: 2.5rem;
+    color: #394867;
+    font-family: 'Rubik', sans-serif;
+}
+
+.player-current-score-container {
+    background-color: #394867;
+    padding: 1rem 1.5rem;
+    border-radius: 0.75rem;
+    text-align: center;
+    color: #F1F6F9;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.title {
+    font-size: 2rem;
+}
+
+.player-current-score {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.75rem;
+}
+
+.dice-image-container {
+    position: absolute;
+    left: 45%;
+    top: 40%;
+    width: 4rem;
+    height: 4rem;
+}
+
+.dice-image {
+    width: 100%;
+    cursor: pointer;
+}
+
+.new-game-button {
+    position: absolute;
+    left: 41%;
+    top: 7%;
+    padding: 0.5rem 1rem;
+    font-family: 'Darumadrop One', cursive;
+    font-size: 1.15rem;
+    outline: none;
+    border: none;
+    background-color: rgba(57, 72, 103, 0.85);
+    color: #F1F6F9;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.hold-button {
+    position: absolute;
+    left: 42%;
+    bottom: 25%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(57, 72, 103, 0.85);
+    color: #F1F6F9;
+    padding: 0.5rem 0.75rem;
+    font-family: 'Darumadrop One', cursive;
+    font-size: 1.15rem;
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    line-height: 0;
+}
+
+.hold-button-image {
+    height: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+@media screen and (max-width: 426px) {
+    .game-container {
+        width: 25rem;
+    }
+
+    .game-left-container, .game-right-container {
+        gap: 7rem;
+        padding: 5rem 1.5rem;
+    }
+
+    .player-title {
+        font-size: 2rem;
+    }
+
+    .dice-image-container {
+        left: 42%;
+        top: 42%;
+    }
+
+    .title {
+        font-size: 1.75rem;
+    }
+
+    .new-game-button {
+        left: 36%;
+        top: 5%;
+    }
+
+    .hold-button {
+        left: 37%;
+        bottom: 3.5%;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .game-container {
+        width: 22rem;
+    }
+
+    .game-left-container, .game-right-container {
+        gap: 6rem;
+    }
+
+    .dice-image-container {
+        left: 42.25%;
+        top: 40%;
+        height: 3.5rem;
+        width: 3.5rem;
+    }
+
+    .new-game-button {
+        left: 34%;
+        top: 5%;
+    }
+
+    .hold-button {
+        left: 35%;
+    }
+}

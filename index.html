@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pig Game</title>
+        <link rel="shortcut icon" href="./media/dice.png" type="image/x-icon">
+        <link rel="stylesheet" href="./styles/style.css">
+    </head>
+    <body>
+        <div class="game-container">
+            <div class="game-left-container player0">
+                <div class="player-container">
+                    <h3 class="player-title">Player 1</h3>
+
+                    <p class="player-score" id="player0-total-score">0</p>
+                </div>
+
+                <div class="player-current-score-container">
+                    <p class="title">Current</p>
+
+                    <p class="player-current-score" id="player0-current-score">0</p>
+                </div>
+            </div>
+
+            <div class="game-right-container player1">
+                <div class="player-container">
+                    <h3 class="player-title">Player 2</h3>
+
+                    <p class="player-score" id="player1-total-score">0</p>
+                </div>
+
+                <div class="player-current-score-container">
+                    <p class="title">Current</p>
+
+                    <p class="player-current-score" id="player1-current-score">0</p>
+                </div>
+            </div>
+
+            <div class="dice-image-container">
+                <img src="./media/dice-1.png" alt="" class="dice-image">
+            </div>
+
+            <button class="new-game-button">New Game</button>
+            
+            <button class="hold-button">
+                <img src="./media/hodl.png" alt="" class="hold-button-image">
+                HODL
+            </button>
+        </div>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
